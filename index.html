@@ -2,17 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacob Rees</title>
   </head>
-  <body>
+  <body class="m-0 p-0 box-border font-montserrat scroll-smooth">
     <nav class="w-full h-[120px] bg-[#121b22]">
       <div
         class="w-[90%] max-w-[1400px] mx-auto h-full flex justify-between items-center"
       >
         <h2
-          class="text-white font-normal text-[40px] cursor-pointer transition-colors duration-500 ease-in-out hover:text-[#ff664d]"
+          class="text-white font-montserrat text-[40px] cursor-pointer transition-colors duration-500 ease-in-out hover:text-[#ff664d]"
         >
           &lt;Jacob Rees&gt;
         </h2>
@@ -39,7 +38,7 @@
             >RESUME</a
           >
           <img
-            class="navigation-menu w-[50px] sm:visible md:hidden filter invert"
+            class="hover:cursor-pointer navigation-menu w-[50px] sm:visible md:hidden filter invert"
             src="menu.svg"
             alt="navigation menu"
           />
@@ -49,11 +48,17 @@
     <nav
       class="mobile-nav w-screen h-screen bg-[#121b22] fixed top-0 translate-x-[-100%] transition-transform duration-500 ease-in-out block md:hidden"
     >
-      <div class=" flex w-full h-[120px] justify-end px-2">
-        <img class="mobile-close-navbar w-[60px] filter invert" src="close.svg" alt="close menu" />
+      <div class="flex w-full h-[120px] justify-end px-2">
+        <img
+          class="hover:cursor-pointer mobile-close-navbar w-[60px] filter invert"
+          src="close.svg"
+          alt="close menu"
+        />
       </div>
       <div class="flex flex-col items-center w-full h-full">
-        <a class="mobile-nav-link text-white no-underline text-[30px] mb-[50px]" href="#about"
+        <a
+          class="mobile-nav-link text-white no-underline text-[30px] mb-[50px]"
+          href="#about"
           >ABOUT</a
         >
         <a
@@ -61,7 +66,9 @@
           href="#projects"
           >PROJECTS</a
         >
-        <a class="mobile-nav-link text-white no-underline text-[30px] mb-[50px]" href="#contact"
+        <a
+          class="mobile-nav-link text-white no-underline text-[30px] mb-[50px]"
+          href="#contact"
           >CONTACT</a
         >
         <a
@@ -72,6 +79,64 @@
         >
       </div>
     </nav>
+    <section
+      class="bg-[#121b22] w-full flex justify-center items-center py-[20px] md:py-[50px]"
+      id="about"
+    >
+      <div class="w-full max-w-[1200px] mx-[20px] md:mx-[50px] flex">
+        <div class="text-white">
+          <h2 class="font-montserrat text-[30px] md:text-[40px]">
+            Hello! I’m Jacob, a developer <br />
+            based in Wales
+          </h2>
+          <p class="text-[#b4bcc4] my-[18px] md:my-[25px] text-[20px]">
+            I design and craft websites
+          </p>
+          <p class="text-[#b4bcc4] my-[18px] md:my-[25px] text-[20px]">
+            I was a student at Microverse where I spent 8 months learning the
+            fundamentals of front-end and back-end web development. I then chose
+            to embark onto my own journey of iOS development while continuously
+            exploring the latest advancements in web technology.
+          </p>
+          <p class="text-[#b4bcc4] my-[18px] md:my-[25px] text-[20px]">
+            I have since developed a range of apps and websites where I have
+            taken a concept and developed that into something tangible.
+          </p>
+          <div class="pt-[20px]">
+            <a
+              class="bg-[#ff664d] text-white no-underline px-[10px] py-[10px] rounded-[5px] text-[16px]"
+              target="_blank"
+              href="https://github.com/jacobrees"
+              >View LinkedIn</a
+            >
+            <a
+              class="bg-white text-[#121b22] no-underline px-[10px] py-[10px] rounded-[5px] text-[16px] ml-[20px]"
+              target="_blank"
+              href="https://www.linkedin.com/in/jacob-rees/"
+              >View Github</a
+            >
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <img
+            class="rounded-[20px]"
+            src="profile-pic.jpg"
+            alt="profile-pic"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="w-[90%] max-w-[1400px] mx-auto pt-[20px]">
+        <h1 class="text-[30px] font-montserrat">Projects</h1>
+        <p class="text-[#686868] text-[24px]">
+          Some of the projects I have worked on
+        </p>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>3</h1>
+    </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
